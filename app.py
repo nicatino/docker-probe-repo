@@ -10,7 +10,7 @@ def hello():
     return "Flask inside Docker!!"
 
 @app.route("/main")
-def hello():
+def custom_page():
     return "Your custom page"
 
 
