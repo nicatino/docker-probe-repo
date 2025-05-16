@@ -9,6 +9,10 @@ metrics = PrometheusMetrics(app)
 def hello():
     return "Flask inside Docker!!"
 
+@app.route("/main")
+def hello():
+    return "Your custom page"
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
